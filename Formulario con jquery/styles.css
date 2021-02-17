@@ -1,0 +1,11 @@
+.has-error{
+    color:red;
+   
+}
+.has-error .form-control{
+    border: 3px solid rgb(231, 130, 130);
+}
+
+.has-error .form-control1 .form-check-label{
+    color: red; 
+}

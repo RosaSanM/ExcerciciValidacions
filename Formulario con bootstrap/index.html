@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    
+   
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <!--css-->
+     <link rel="stylesheet" href="styles.css">      
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="caja">
+                    <h2 class="titulo col-12 text-center py-3">Formulario</h2>    
+                    <form action="" class="form-row needs-validation m-3" id="form" novalidate>
+                        <div class="form-group col-md-4">
+                            <label for="nombre">Nombre</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Has de introducir un mínimo de tres carácteres!</div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="apellido">Apellido</label>
+                            <input class="form-control" type="text" name="apellido" id="apellido" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Has de introducir un mínimo de tres carácteres!</div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="dire">Dirección</label>
+                            <input class="form-control" type="text" name="dire" id="dire" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Introduce una dirección válida!</div>
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                            <label for="provincia">Provincia</label>
+                            <select class="custom-select" name="provincia" id="provincia" required>
+                                <option selected disabled value="">Elige una opción</option>
+                                <option value="1">Barcelona</option>
+                                <option value="2">Girona</option>
+                                <option value="3">Lleida</option>
+                                <option value="4">Tarragona</option>
+                            </select>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Elige una opción!</div>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="ciudad">Ciudad</label>
+                            <input class="form-control" type="text" name="ciudad" id="ciudad" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Introduce una ciudad válida!</div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="codigo">Código postal</label>
+                            <input class="form-control" type="text" name="codigo" id="codigo" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Has de introducir un código válido de 5 dígitos!</div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">Email</label>
+                            <input class="form-control" type="email" name="mail" id="mail" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Introduce un email válido!</div>
+                            
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pass">Contraseña</label>
+                            <input class="form-control" type="password" name="pass" id="pass" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Mínimo requerido 8 carácteres y máximo 15, has de introducir mínimo una mayúscula, un número y un carácter especial!</div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pass2">Repetir contraseña</label>
+                            <input class="form-control" type="password" name="pass2" id="pass2" required>
+                            <div class="valid-feedback">Válido!</div>
+                            <div class="invalid-feedback">Las contraseñas no coinciden!</div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Términos y condiciones
+                              </label>
+                              <div class="invalid-feedback">
+                                Has de aceptar para enviar.
+                              </div>
+                            </div>
+                          </div>
+                       
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary mt-3 col-md-4 " id="btn" type="submit">Enviar</button>
+                        </div> 
+                             
+                    
+                    </form>
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+
+
+ 
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!--jquery validate-->
+    <script src="/jqueryvalidator/dist/jquery.validate.min.js"></script>
+    <script src="/validate.js" ></script>
+    <!--enlca al código de validar-->
+    <script src="script.js" ></script>
+</body>
+</html>

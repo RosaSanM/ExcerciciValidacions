@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <form action="" class="formulario" id="formulario">
+            <!--Grupo de nombre-->
+            <div class="form-grupo" id="grupo-nombre">
+                <label for="nombre" class="form-label">Nombre</label>
+                <div class="form-grupo-input">
+                    <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Nombre">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">El nombre ha de contener un mínimo de tres dígitos y no puede contener carácteres especiales</p>
+            </div>
+
+             <!--Grupo de apellido-->
+             <div class="form-grupo" id="grupo-apellido">
+                <label for="apellido" class="form-label">Apellido</label>
+                <div class="form-grupo-input">
+                    <input type="text" class="form-input" name="apellido" id="apellido" placeholder="Apellido">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">El apellido ha de contener un mínimo de tres dígitos y no puede contener carácteres especiales</p>
+            </div>
+
+             <!--Grupo de email-->
+             <div class="form-grupo" id="grupo-email">
+                <label for="email" class="form-label">Email</label>
+                <div class="form-grupo-input">
+                    <input type="email" class="form-input" name="email" id="email" placeholder="Email">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">Formato de email incorrecto</p>
+            </div>
+
+
+             <!--Grupo de contraseña-->
+            <div class="form-grupo" id="grupo-pass">
+                <label for="pass" class="form-label">Contraseña</label>
+                <div class="form-grupo-input">
+                    <input type="password" class="form-input" name="pass" id="pass" placeholder="Contraseña">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">La contraseña ha de contener un mínimo de 8 carácteres,mínimo un digito, una mayúscula y un carácter especial.</p>
+            </div>
+
+              <!--Grupo de repetir contraseña-->
+              <div class="form-grupo" id="grupo-pass2">
+                <label for="pass2" class="form-label">Repetir Contraseña</label>
+                <div class="form-grupo-input">
+                    <input type="password" class="form-input" name="pass2" id="pass2" placeholder="Repite contraseña">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">La contraseña no coincide</p>
+            </div>
+
+
+              <!--Grupo de dirección-->
+              <div class="form-grupo" id="grupo-dire">
+                <label for="dire" class="form-label">Dirección</label>
+                <div class="form-grupo-input">
+                    <input type="text" class="form-input" name="dire" id="dire" placeholder="Dirección">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">Introduce una dirección válida.</p>
+            </div>
+
+
+            <!--Grupo de provincia-->
+            <div class="form-grupo" id="grupo-provincia">
+                <label for="provincia" class="form-label">Provincia</label>
+                <div class="form-grupo-input">
+                    <select class="form-input" name="provincia" id="provincia">
+                        <option selected value="0">Elige provincia</option>
+                        <option value="1">Barcelona</option>
+                        <option value="2">Girona</option>
+                        <option value="3">Tarragona</option>
+                        <option value="4">Lleida</option>
+                    </select>
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error"></p>
+            </div>
+
+
+              <!--Grupo de ciudad-->
+            <div class="form-grupo" id="grupo-ciudad">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <div class="form-grupo-input">
+                    <input type="text" class="form-input" name="ciudad" id="ciudad" placeholder="Ciudad">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">Introduce un dato válido.</p>
+            </div>
+
+
+              <!--Grupo de código postal-->
+              <div class="form-grupo" id="grupo-codigo">
+                <label for="codigo" class="form-label">Código postal</label>
+                <div class="form-grupo-input">
+                    <input type="text" class="form-input" name="codigo" id="dire" placeholder="Código postal">
+                    <i class="form-validacion-estado far fa-thumbs-down"></i>
+                </div>
+                <p class="form-input-error">Introduce un código válido.</p>
+            </div>
+
+
+            <!--Términos y condiciones-->
+            <div class="form-grupo form-grupo-terminos" id="grupo-terminos">
+                <label for="" class= "form-label">
+                    <input class="form-checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los términos y condiciones
+                </label>
+            </div>
+
+            <!--mensaje de error-->
+            <div class="form-mensaje" id="form-mensaje">
+                <p><i class="fas fa-skull-crossbones"></i><b>Error: </b>Rellena bien el formulario!! </p>
+            </div>
+
+            <!--botón de submit-->
+            <div class="form-grupo form-grupo-btn">
+                <p class= "form-mensaje-exito" id="form-mensaje-exito">Formulario enviado correctamente!</p>
+                <button type="submit" class="form-btn">Enviar</button>
+               
+            </div>
+
+
+
+
+
+
+
+
+
+        </form>
+    </main>
+    <!--enlace al javascript-->
+    <script src="./js/form.js"></script>
+    <!--font awsome-->
+    <script src="https://kit.fontawesome.com/c18a259d51.js" crossorigin="anonymous"></script>    
+</body>
+</html>

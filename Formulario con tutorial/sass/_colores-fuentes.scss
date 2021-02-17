@@ -1,0 +1,20 @@
+//fuentes
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500&display=swap');
+.formulario{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+//colores
+$rojo:  #ec4646;
+$verde: #54e346;
+
+@mixin incorrecto{
+    color: $rojo;
+    opacity: 1;
+    
+}
+@mixin correcto{
+    color:$verde;
+    opacity: 1;
+}

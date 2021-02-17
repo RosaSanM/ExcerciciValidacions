@@ -1,0 +1,74 @@
+@import "colores-fuentes";
+//estilos de los input  
+
+.form-input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.form-input-error-encendido{
+    display: block;
+}
+
+
+.form-validacion-estado{
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    z-index: 3;
+    font-size: 15px;
+    opacity: 0;
+}
+
+.form-grupo-terminos,
+.form-mensaje,
+.form-grupo-btn{
+    grid-column: span 2;
+}
+//mensaje error de envío de formulario
+.form-mensaje{
+    display: none;
+    height: 45px;
+    line-height: 45px;
+    background: $rojo;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+
+.form-mensaje-error{
+    display: block;
+}
+//mensaje envio con éxito
+.form-mensaje-exito{
+    margin: 10px;
+    font-size: 18px;
+    color: $verde;
+    display: none;
+}
+.form-mensaje-exito-activo{
+    display: block;
+}
+
+
+//estilos de las validaciones
+.form-grupo-correcto .form-validacion-estado{
+    @include correcto;
+}
+.form-grupo-incorrecto{
+    .form-label{
+        @include incorrecto;
+    } 
+    .form-validacion-estado{
+        @include incorrecto;
+    }
+    .form-input{
+        @include incorrecto;
+        border: 3px solid $rojo;
+        &:hover{
+            border: 3px solid $rojo;
+        }    
+    }
+}
+
+
+
